@@ -1,0 +1,14 @@
+Package: LabSolution
+Type: Package
+Title: A package for calculating laboratory solutions production
+Version: 0.1.0
+Author: Pejman morovat
+Maintainer: Pejman Morovat <pejmanmorovat@yahoo.com>
+Description: This package helps laboratory personnel and researchers 
+  calculate molarity, normality, and the quantity of solute required 
+  to produce laboratory solutions.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/pejmanmorovat/Labsolution-cal-R-pkg
+RoxygenNote: 7.2.0
