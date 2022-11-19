@@ -9,7 +9,6 @@ This package helps laboratory personnel and researchers calculate molarity, norm
 ## Author
 Pejman Morovat
 
-https://g.co/kgs/6G2DEq
 ## Installation
 - First Install devtools from CRAN
 
@@ -19,7 +18,7 @@ https://g.co/kgs/6G2DEq
 
   devtools::install_github("pejmanmorovat/Labsolution-cal-R-pkg")
 
-  - Now use it
+- Now use it
   
   library(LabSolution)
 
@@ -29,7 +28,7 @@ https://g.co/kgs/6G2DEq
 
   remotes::install_github("pejmanmorovat/Labsolution-cal-R-pkg")
 
-  - Now use it
+- Now use it
 
   library(LabSolution)
 ## Functions:
