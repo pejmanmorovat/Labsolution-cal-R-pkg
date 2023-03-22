@@ -267,8 +267,6 @@ vol(100,1,12)
 
   [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 ## 🚀 About Me
-I am Pejman Morovat, a biotechnologist who devotes most of his time to research in bioinformatics. Having the opportunity to work in a lab and analyze data and meta-data is very rewarding for me. In my field, I am constantly putting new ideas to use, and I enjoy being creative during my research.
-
 I developed this R package to make it easier to calculate laboratory solutions production for my thesis in the laboratory at Babol university of medical science. 
 (Cellular and Molecular Biology Research Center, Health Research Institute, Babol University of Medical Science, Babol, Iran)
 
