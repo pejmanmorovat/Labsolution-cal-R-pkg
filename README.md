@@ -273,11 +273,6 @@ I developed this R package to make it easier to calculate laboratory solutions p
 ## Features
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=ewB4cZIAAAAJ&hl=en)
-
-- [Researchgate](https://www.researchgate.net/profile/Pejman-Morovat)
-
-- [LinkedIn](https://www.linkedin.com/in/pejman-morovat)
 
 - [Twitter](https://twitter.com/pejman_morovat)
 
