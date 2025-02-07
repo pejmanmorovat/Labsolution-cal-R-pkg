@@ -8,42 +8,43 @@ This package helps laboratory personnel and researchers calculate molarity, norm
 
 ## Author
 Pejman Morovat
-
+[Email](pejmanmorovat@yahoo.com)
 ## Installation
 - First Install devtools from CRAN
-
-  install.packages("devtools")
-
+```
+ install.packages("devtools")
+```
 - Then Install LabSolution by devtools package
-
-  devtools::install_github("pejmanmorovat/Labsolution-cal-R-pkg")
-
+```
+devtools::install_github("pejmanmorovat/Labsolution-cal-R-pkg")
+```
 - Now use it
-  
+```
   library(LabSolution)
-
+```
 - Alternatively, you can install LabSoultion using remotes package (CRAN)
-
+```
   install.packages("remotes")
-
-  remotes::install_github("pejmanmorovat/Labsolution-cal-R-pkg")
-
+```
+```
+remotes::install_github("pejmanmorovat/Labsolution-cal-R-pkg")
+```
 - Now use it
-
+```
   library(LabSolution)
+```
 ## Functions:
 ## 1- molarity {LabSolution}	
 
-- Description: 
+# Description: 
 
 An amount of solute in one unit of a solution is known as the molar concentration. The unit of measurement is mol/L, mol/dm3, or mol/m3. In molar concentration, also known as molarity, the unit M refers to the molar.
 
-- Usage: 
+# Usage: 
 
 molarity (p,  d,  fw)
 
-- Arguments:
-
+# Arguments:
 p --> 	
 Purity of solution. Percentage purity of a substance can be calculated by dividing the mass of the pure chemical by the total mass of the sample, and then multiplying this number by 100
 
@@ -57,7 +58,7 @@ Formula weight (Molecular weight or molar mass) of the solute. If the mass of th
 
 10 * p (the percentage purity) * d (density of solution(g/cm3)) / fw (Molar mass(g/mol))
 
-- Example:
+# Example:
 
 What is the molarity of concentrated sulfuric acid if its purity is 96 percent and its density is 1.84 grams per liter? 
 (The molecular weight of HSO4 is 97.064 g/mol.)
@@ -66,19 +67,18 @@ molarity(96,1.84,97.064)
 
  18.1983 mol/L
  
- 
 
 ## 2- mgrams {LabSolution}
 
-- Description:
+# Description:
 
 Determination of the amount of solute in grams for preparing the solution when the unit of solution concentration is the molarity
 
-- Usage:
+# Usage:
 
 mgrams (V, molarity, fw)
 
-- Arguments:
+# Arguments:
 
 V -->
 Volume of solution (ml)
@@ -88,12 +88,11 @@ moles of solute / liters of solution (mol/L).
 
 fw -->
 Formula weight or molar mass of the solute
-
-- Value:
+# Value:
 
 v * molarity * fw / 1000
 
-- Example:
+# Example:
 
 To make 250 ml of an aqueous solution with [NaCl] = 0.8 M. What mass of the solute would we need to make this solution? (Molecular weight of sodium chloride= 58.44 g/mol)
 
@@ -103,11 +102,11 @@ mgrams(250,0.8,58.44)
 
 ## 3- normality {LabSolution}
 
-- Description:
+# Description:
 
 Normality is the number of equivalents per liter of solution.
 
-- Usage:
+# Usage:
 
 normality (p, d, eqval)
 
@@ -122,11 +121,11 @@ Density of solution. To determine the solution's density, weigh a precisely meas
 eqval -->	
 Equivalent: In a chemical reaction, an equivalent is the amount of a substance that reacts with (or is equivalent to) an arbitrary amount (typically one mole) of another substance
 
-- Value:
+# Value:
 
 10 * p * d / eqval
 
-- Example:
+# Example:
 
 What is the normality of a 96 per cent solution of H2SO4 of specific gravity 1.84 g/mL?
 
@@ -136,11 +135,11 @@ normality(96,1.84,49.039)
 
 ## 4- eqval {LabSolution}
 
-- Description:
+# Description:
 
 Equivalent: In a chemical reaction, an equivalent is the amount of a substance that reacts with (or is equivalent to) an arbitrary amount (typically one mole) of another substance
 
-- Usage:
+# Usage:
 
 eqval (fw, n)
 
@@ -156,7 +155,7 @@ The number of equivalents that changes by ionization
 
 fw / n
 
-- Example:
+# Example:
 
 What is the gram equivalent weight of phosphoric acid, H3PO4?(fw= molecular weight in g/mol, n= number of equivalents)
 
@@ -166,15 +165,15 @@ eqval(127,3)
 
 ## 5- normality2 {LabSolution}
 
-- Description:
+# Description:
 
 It's another function for the determination of the normality of the solution.
 
-- Usage:
+# Usage:
 
 normality2 (molarity, n)
 
-- Arguments:
+# Arguments:
 
 molarity -->	
 Molarity of solution (mol/L). moles of solute/liters of solution
@@ -186,7 +185,7 @@ The number of equivalents that changes by ionization
 
 molarity * n
 
-- Example:
+# Example:
 
 What is the normality of Sulfuric Acid?(molarity of H2SO4 96 percent= 18.01)
 
@@ -196,11 +195,11 @@ normality2(18.01,2)
 
 ## 6- ngrams {LabSolution}
 
-- Description:
+# Description:
 
 Determination of the amount of solute in grams for preparing the solution when the unit of solution concentration is normality.
 
-- Usage:
+# Usage:
 
 ngrams (v, normality, eqval)
 
@@ -222,7 +221,7 @@ The number of equivalents that changes by ionization
 
 v * normality * eqval / 1000
 
-- Example:
+# Example:
 
 To make 150 ml of an aqueous solution with [NaCl] = 10 N. What mass of the solute would we need to make this solution?
 
@@ -232,12 +231,11 @@ ngrams(150,10,1)
 
 ## 7- vol {LabSolution}
 
-
-- Description:
+# Description:
 
 Using the following equation, you can figure out the concentration or volume of the concentrated or diluted solution
 
-- Usage:
+# Usage:
 
 vol (V, molarity, m)
 
@@ -252,11 +250,11 @@ is the concentration in molarity of the dilute solution (after more solvent has 
 m -->
 is the concentration in molarity (mol/L) of the concentrated solution
 
-- Value:
+# Value:
 
 V * molarity / m
 
-- Example:
+# Example:
 
 Prepare 100 mL of 1.0 M hydrochloric acid from concentrated (12.1 M) hydrochloric acid.
 
@@ -266,13 +264,11 @@ vol(100,1,12)
 ## License
 
   [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+  
 ## 🚀 About Me
 I developed this R package to make it easier to calculate laboratory solutions production for my thesis in the laboratory at Babol university of medical science. 
 (Cellular and Molecular Biology Research Center, Health Research Institute, Babol University of Medical Science, Babol, Iran)
 
 ## Features
-
-
-
 - [Twitter](https://twitter.com/pejman_morovat)
 
