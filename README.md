@@ -41,9 +41,9 @@ remotes::install_github("pejmanmorovat/Labsolution-cal-R-pkg")
 An amount of solute in one unit of a solution is known as the molar concentration. The unit of measurement is mol/L, mol/dm3, or mol/m3. In molar concentration, also known as molarity, the unit M refers to the molar.
 
 # Usage: 
-
+```
 molarity (p,  d,  fw)
-
+```
 # Arguments:
 p --> 	
 Purity of solution. Percentage purity of a substance can be calculated by dividing the mass of the pure chemical by the total mass of the sample, and then multiplying this number by 100
@@ -75,9 +75,9 @@ molarity(96,1.84,97.064)
 Determination of the amount of solute in grams for preparing the solution when the unit of solution concentration is the molarity
 
 # Usage:
-
+```
 mgrams (V, molarity, fw)
-
+```
 # Arguments:
 
 V -->
@@ -107,9 +107,9 @@ mgrams(250,0.8,58.44)
 Normality is the number of equivalents per liter of solution.
 
 # Usage:
-
+```
 normality (p, d, eqval)
-
+```
 - Arguments:
 
 p -->
@@ -140,9 +140,9 @@ normality(96,1.84,49.039)
 Equivalent: In a chemical reaction, an equivalent is the amount of a substance that reacts with (or is equivalent to) an arbitrary amount (typically one mole) of another substance
 
 # Usage:
-
+```
 eqval (fw, n)
-
+```
 - Arguments:
 
 fw -->	
@@ -170,9 +170,9 @@ eqval(127,3)
 It's another function for the determination of the normality of the solution.
 
 # Usage:
-
+```
 normality2 (molarity, n)
-
+```
 # Arguments:
 
 molarity -->	
@@ -200,9 +200,9 @@ normality2(18.01,2)
 Determination of the amount of solute in grams for preparing the solution when the unit of solution concentration is normality.
 
 # Usage:
-
+```
 ngrams (v, normality, eqval)
-
+```
 - Arguments:
 
 v -->	
@@ -236,9 +236,9 @@ ngrams(150,10,1)
 Using the following equation, you can figure out the concentration or volume of the concentrated or diluted solution
 
 # Usage:
-
+```
 vol (V, molarity, m)
-
+```
 - Arguments:
 
 V -->	
